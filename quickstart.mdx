@@ -1,0 +1,120 @@
+---
+title: Getting Started with AppSumo
+description: Quickly set up your account and make your first purchase on the AppSumo marketplace to start accessing software deals.
+---
+
+## Prerequisites
+
+Before diving in, ensure you have a valid email address and a preferred payment method ready, such as a credit card or PayPal account.
+
+<Callout kind="info">
+  AppSumo supports major payment providers. No subscription required—pay once per deal.
+</Callout>
+
+## Create Your Account
+
+Follow these steps to sign up and verify your email quickly.
+
+<Steps>
+  <Step title="Visit AppSumo" icon="globe">
+    Navigate to [https://appsumo.com](https://appsumo.com) and click **Sign Up** in the top-right corner.
+  </Step>
+  <Step title="Enter Details" icon="user">
+    Provide your email, create a password, and agree to the terms. Click **Create Account**.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification email from AppSumo. Click the link to activate your account.
+  </Step>
+</Steps>
+
+## Browse Deals and Categories
+
+AppSumo curates deals across productivity, marketing, and content tools. Use categories to find what fits your needs.
+
+<Columns cols={3}>
+  <Card title="Productivity" icon="calendar" href="https://appsumo.com/browse/productivity/">
+    Tools for task management and automation.
+  </Card>
+  <Card title="Marketing" icon="trending-up" href="https://appsumo.com/browse/marketing/">
+    SEO, email, and ad platforms at discounts.
+  </Card>
+  <Card title="Content" icon="edit-3" href="https://appsumo.com/browse/content/">
+    Video editors, writers, and design software.
+  </Card>
+</Columns>
+
+## Complete Your First Purchase
+
+Select a deal and proceed to checkout. Here's how.
+
+<Steps>
+  <Step title="Choose a Deal" icon="shopping-cart">
+    Click **Get Deal** on any featured product. Review lifetime access details.
+  </Step>
+  <Step title="Add to Cart" icon="plus">
+    Select your tier (e.g., 1 user or team) and click **Get [Deal Name]**.
+  </Step>
+  <Step title="Checkout" icon="credit-card">
+    Enter payment details or select saved method. Apply any promo code if available.
+  </Step>
+</Steps>
+
+<Tabs>
+  <Tab title="Credit Card" icon="credit-card">
+    Enter card number, expiry (`MM/YY`), CVV, and billing address.
+  </Tab>
+  <Tab title="PayPal" icon="dollar-sign">
+    Click **Pay with PayPal** and log in to complete securely.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Watch for limited-time deals like SHOP SUMO DAY for extra savings.
+</Callout>
+
+## Navigate Your Dashboard
+
+After purchase, access your orders and downloads from the dashboard.
+
+<Expandable title="Dashboard Overview" default-open="true">
+  Log in and click **My Account** > **Purchases**. Here you find:
+
+  | Section     | Description                          |
+  |-------------|--------------------------------------|
+  | Orders      | View purchase history and invoices. |
+  | Downloads   | Get software installers/licenses.    |
+  | Vouchers    | Redeem codes for SaaS access.        |
+  | Refunds     | Manage returns within policy.        |
+
+  Track deal updates via email notifications.
+</Expandable>
+
+## Next Steps
+
+Explore more with these resources.
+
+<Columns cols={2}>
+  <Card title="Introduction" icon="book-open" href="/introduction">
+    Learn about AppSumo's marketplace.
+  </Card>
+  <Card title="Deals Guide" icon="search" href="/guide">
+    Advanced browsing tips.
+  </Card>
+</Columns>
+
+<CodeGroup tabs="Promo Code Usage">
+  ```bash
+  # Example promo code application (at checkout)
+  PROMO_CODE=SUMODEAL50
+  ```
+  ```javascript
+  // Simulate API for deal check (conceptual)
+  const checkDeal = async (code) => {
+    const response = await fetch('https://api.appsumo.com/deals', {
+      method: 'POST',
+      body: JSON.stringify({ promo: code })
+    });
+    return response.json();
+  };
+  ```
+</CodeGroup>

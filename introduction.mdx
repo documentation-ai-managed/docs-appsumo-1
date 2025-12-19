@@ -1,0 +1,109 @@
+---
+title: Introduction to AppSumo
+description: Discover the leading digital marketplace for entrepreneurs to find unbeatable deals on business software, empowering lifestyle and productivity without monthly fees.
+---
+
+## Overview
+
+AppSumo empowers over 1 million entrepreneurs by providing a premier digital marketplace for discovering and purchasing lifetime deals on business software. You access curated tools that boost productivity, marketing, and content creation without recurring monthly fees. As the top destination for incredible deals, AppSumo ensures you never pay full price again.
+
+The platform revolutionizes software acquisition through exclusive offers and community-driven recommendations. Focus on vetted products that shape your lifestyle and business growth.
+
+<Columns cols={3}>
+  <Card title="Lifetime Deals" icon="gift" href="#get-started">
+    Secure one-time purchases for premium tools, eliminating subscription costs.
+  </Card>
+  <Card title="Curated Selection" icon="award" href="#categories">
+    Explore handpicked software from top developers.
+  </Card>
+  <Card title="Entrepreneur Community" icon="users" href="/quickstart">
+    Join 1M+ users sharing insights and recommendations.
+  </Card>
+</Columns>
+
+## Key Benefits for Entrepreneurs
+
+You gain immediate access to high-value software at unbeatable prices. AppSumo eliminates the hassle of sifting through mediocre options by featuring only proven tools.
+
+<Callout kind="success">
+  Save thousands annually—no more subscription traps.
+</Callout>
+
+Key advantages include:
+- **Unmatched Savings**: Lifetime licenses at 90%+ discounts.
+- **No Commitments**: Own your tools forever.
+- **Daily Deals**: Fresh offers tailored to business needs.
+
+## Curated Categories
+
+AppSumo organizes deals into essential categories to streamline your search.
+
+<Tabs>
+  <Tab title="Productivity" icon="zap">
+    Boost efficiency with automation and workflow tools.
+    
+    Examples: Task managers, email enhancers, and AI assistants.
+    
+    ```javascript
+    // Example: Integrate a productivity tool via API
+    const appsumoDeal = await fetch('https://api.appsumo.com/deals/productivity');
+    const data = await appsumoDeal.json();
+    console.log(data.lifetimePrice);
+    ```
+  </Tab>
+  <Tab title="Marketing" icon="trending-up">
+    Drive growth with SEO, email, and ad platforms.
+    
+    Realistic integration:
+    
+````javascript
+// Fetch marketing deal details
+async function getMarketingDeals() {
+  const response = await fetch('https://api.appsumo.com/deals?category=marketing');
+  return response.json();
+}
+````
+  </Tab>
+  <Tab title="Content Tools" icon="edit-3">
+    Create compelling content faster.
+    
+    ```python
+    import requests
+    
+    deals = requests.get('https://api.appsumo.com/deals?category=content')
+    print(deals.json()['featured'])
+    ```
+  </Tab>
+</Tabs>
+
+## Special Initiatives
+
+<Expandable title="SHOP SUMO DAY" default-open="true">
+  Participate in SHOP SUMO DAY for flash sales and exclusive bundles. This annual event offers the deepest discounts on popular tools, drawing thousands of entrepreneurs.
+  
+  Mark your calendar and prepare your wishlist to maximize savings.
+</Expandable>
+
+## Get Started
+
+Begin transforming your business today with these simple steps.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Create a free account at `https://appsumo.com`.
+    
+    <Callout kind="tip">
+      Use your business email for personalized recommendations.
+    </Callout>
+  </Step>
+  <Step title="Browse Deals" icon="search">
+    Filter by category or popularity to find lifetime offers.
+  </Step>
+  <Step title="Purchase Securely" icon="credit-card">
+    Complete one-time payment and access your software instantly.
+  </Step>
+</Steps>
+
+<Callout kind="info">
+  Ready for more? Check the [Quickstart](/quickstart) for advanced deal hunting tips.
+</Callout>

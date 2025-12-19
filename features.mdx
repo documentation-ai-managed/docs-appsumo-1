@@ -1,0 +1,101 @@
+---
+title: AppSumo Features Overview
+description: Explore the core capabilities of AppSumo, from deal discovery to lifetime access purchases, designed to help entrepreneurs build their businesses efficiently.
+---
+
+## Key Features at a Glance
+
+AppSumo empowers you to discover and acquire top-tier business tools without recurring subscriptions. You browse curated deals on productivity software, marketing automation, and content creation apps, all available as lifetime deals.
+
+<Columns cols={3}>
+  <Card title="Deal Discovery" icon="search" href="#deal-discovery">
+    Find tools tailored to your needs with advanced filters and recommendations.
+  </Card>
+  <Card title="Lifetime Purchases" icon="gift" href="#one-time-purchases">
+    Secure permanent access with one-time payments, eliminating monthly fees.
+  </Card>
+  <Card title="Reviews & Ratings" icon="star" href="#reviews-ratings">
+    Make informed decisions using verified customer feedback and star ratings.
+  </Card>
+</Columns>
+
+## Deal Discovery and Filtering Options
+
+You start your journey on AppSumo by exploring thousands of deals. The platform offers intuitive search and filtering to match tools to your business stage—whether you're bootstrapping a startup or scaling an agency.
+
+<Tabs>
+  <Tab title="Categories" icon="layers">
+    Filter by categories like Marketing, Productivity, or SEO. Select multiple to narrow results quickly.
+  </Tab>
+  <Tab title="Pricing Tiers" icon="dollar-sign">
+    Sort deals by price ranges, from `<{50}` budget steals to premium bundles over `{500}` savings.
+  </Tab>
+  <Tab title="Deal Status" icon="clock">
+    Prioritize "Live Now" limited-time offers or browse upcoming SHOP SUMO DAY events.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Use the "Recommended for You" section, powered by your browsing history, to uncover personalized gems.
+</Callout>
+
+## One-Time Purchase Model Benefits
+
+AppSumo revolutionizes software acquisition with lifetime deals. You pay once and own the software forever, dodging endless SaaS subscriptions.
+
+<Steps>
+  <Step title="Browse Deals" icon="search">
+    Apply filters to find matching tools.
+  </Step>
+  <Step title="Review Details" icon="eye">
+    Check features, vendor info, and refund policy.
+  </Step>
+  <Step title="Purchase" icon="shopping-cart">
+    Complete checkout with one-time payment via card or PayPal.
+  </Step>
+  <Step title="Access Instantly" icon="download">
+    Receive license keys and setup instructions immediately.
+  </Step>
+</Steps>
+
+This model saves you thousands long-term. For example, a `{299}` deal replaces `{49}/month` plans, yielding payback in under a year.
+
+## Customer Reviews and Ratings System
+
+Trust fuels your decisions on AppSumo. Each deal features verified reviews from real users, with a 5-star rating system.
+
+| Rating | Description | Typical Feedback |
+|--------|-------------|------------------|
+| 5 Stars | Exceptional value | "Transformed my workflow—worth every penny!" |
+| 4 Stars | Strong performer | "Great features, minor learning curve." |
+| 3 Stars | Functional but limited | "Does the job, but lacks advanced options." |
+| 2 Stars | Below expectations | "Basic; better free alternatives exist." |
+| 1 Star | Avoid | "Bugs galore; poor support." |
+
+Reviews include screenshots and videos for authenticity. You sort by "Most Helpful" or recency.
+
+<Expandable title="How Ratings Work" default-open="true">
+  AppSumo moderates reviews post-purchase only. You earn badges for detailed feedback, boosting visibility.
+</Expandable>
+
+## Exclusive Promotions and Limited-Time Offers
+
+AppSumo runs flash sales like SHOP SUMO DAY, stacking extra discounts on lifetime deals. You get email alerts for drops, ensuring you never miss out.
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // Example: Embed AppSumo deal badge on your site
+  const dealId = 'example-deal-123';
+  const badgeUrl = `https://appsumo.com/deals/${dealId}/badge`;
+  document.getElementById('deal-badge').src = badgeUrl;
+  ```
+  ```python
+  # Fetch latest deals via affiliate API (requires key)
+  import requests
+  api_key = 'YOUR_API_KEY'
+  response = requests.get('https://api.appsumo.com/deals', headers={'Authorization': f'Bearer {api_key}'})
+  print(response.json())
+  ```
+</CodeGroup>
+
+Sign up for notifications to catch these exclusives first. With over 1 million users, popular deals sell out fast—act swiftly to lock in savings.

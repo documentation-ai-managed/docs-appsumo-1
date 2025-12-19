@@ -1,0 +1,126 @@
+---
+title: Selling Products on AppSumo
+description: Learn how to list and sell your software products on the AppSumo marketplace to reach over 1 million entrepreneurs seeking great deals.
+---
+
+## Overview
+
+AppSumo connects your software products with over 1 million entrepreneurs looking for lifetime deals on productivity, marketing, and content tools. By selling on AppSumo, you gain instant exposure, rapid revenue, and feedback from a passionate community. Focus on lifetime deals to avoid monthly billing hassles while maximizing upfront payments.
+
+<Columns cols={3}>
+  <Card title="Reach 1M+ Buyers" icon="users" href="#applying">
+    Tap into a ready audience of entrepreneurs.
+  </Card>
+  <Card title="Lifetime Deals" icon="dollar-sign" href="#preparing">
+    Offer one-time purchases for quick revenue.
+  </Card>
+  <Card title="Easy Payouts" icon="trending-up" href="#tracking">
+    Get paid weekly with minimal fees.
+  </Card>
+</Columns>
+
+## Applying to Become a Seller
+
+Start by submitting your application through the AppSumo seller portal. AppSumo reviews products for quality, uniqueness, and market fit. Expect a response within 7-10 business days.
+
+<Steps>
+  <Step title="Create Account" icon="user-plus">
+    Sign up at `https://appsumo.com/seller` with your business email.
+  </Step>
+  <Step title="Submit Application" icon="upload">
+    Provide product details, demo video, and pricing proposal.
+  </Step>
+  <Step title="Product Review" icon="check-circle">
+    AppSumo team evaluates your submission.
+  </Step>
+  <Step title="Onboarding" icon="settings">
+    Sign agreements and set up your seller dashboard.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Prepare a 2-minute demo video showcasing your product's key features. Highlight time savings for users.
+</Callout>
+
+## Preparing Product Listings and Pricing
+
+Craft compelling listings with high-quality screenshots, benefit-focused copy, and competitive pricing. AppSumo specializes in lifetime deals priced from `$29` to `$199` per tier.
+
+<Tabs>
+  <Tab title="Deal Structure" icon="layers">
+    Use tiered pricing to upsell features.
+
+    | Tier | Price | Features |
+    |------|-------|----------|
+    | Basic | `$29` | Core tools |
+    | Pro   | `$59` | Advanced analytics |
+    | Elite | `$99` | Priority support + API access |
+  </Tab>
+  <Tab title="Listing Copy" icon="edit-3">
+    Focus on benefits: "Save 10 hours/week on task automation."
+
+    ```markdown
+    ## TaskMaster Pro
+
+    Automate your workflow and reclaim your time.
+
+    **Key Benefits:**
+    - Integrate with 50+ apps
+    - No-code automations
+    - Lifetime access
+    ```
+  </Tab>
+  <Tab title="Visuals" icon="image">
+    Upload 5-7 screenshots and a GIF demo. Use tools like Loom for videos.
+  </Tab>
+</Tabs>
+
+## Managing Sales and Customer Support
+
+Once live, monitor sales via your dashboard. Handle support through AppSumo's integrated system or your own tools. Respond to inquiries within 24 hours to maintain high ratings.
+
+<CodeGroup tabs="API,Dashboard">
+  ```javascript
+  // Fetch sales data via AppSumo API
+  const response = await fetch('https://api.appsumo.com/sellers/sales', {
+    headers: { Authorization: `Bearer ${YOUR_API_KEY}` }
+  });
+  const sales = await response.json();
+  console.log(sales.totalRevenue);
+  ```
+  ```bash
+  # Dashboard metrics
+  curl -H "Authorization: Bearer YOUR_API_KEY" \
+  https://api.appsumo.com/sellers/metrics
+  ```
+</CodeGroup>
+
+Integrate with Zendesk or Intercom for seamless support.
+
+## Tracking Earnings and Payouts
+
+AppSumo pays weekly via PayPal or wire transfer after a 14-day hold. Track earnings in real-time.
+
+<Expandable title="Payout Schedule" default-open="true">
+  Payouts occur every Monday for sales from the prior week.
+
+  - Minimum payout: `$100`
+  - Fees: 5% platform fee + payment processing
+  - Refunds: Handled automatically; netted from future payouts
+</Expandable>
+
+<Expandable title="Earnings Report Example">
+  ```json
+  {
+    "totalSales": 1500,
+    "revenue": "$45,000",
+    "payouts": [
+      {"date": "2024-10-07", "amount": "$20,000"}
+    ]
+  }
+  ```
+</Expandable>
+
+<Callout kind="success">
+  Top sellers earn over `$1M` in first-year revenue. Optimize based on buyer feedback.
+</Callout>

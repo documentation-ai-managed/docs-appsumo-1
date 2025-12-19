@@ -1,0 +1,137 @@
+---
+title: AppSumo Changelog
+description: Track the latest updates and improvements to the AppSumo platform, including new features and enhancements for buyers and sellers.
+---
+
+## Changelog Overview
+
+AppSumo releases updates regularly to enhance your experience as a buyer or seller. You discover new deals faster, manage seller tools more efficiently, and benefit from performance boosts. Review the latest changes below to see how they impact your workflow.
+
+<Callout kind="info">
+  Check back weekly for new releases. Enable notifications in your account settings to stay ahead.
+</Callout>
+
+## Recent Platform Updates
+
+<Columns cols={2}>
+  <Card title="Buyer Features" icon="shopping-cart" href="#buyers">
+    Explore deal discovery and purchase improvements.
+  </Card>
+  <Card title="Seller Tools" icon="upload-cloud" href="#sellers">
+    New analytics and listing enhancements.
+  </Card>
+</Columns>
+
+<Update label="2024-11-15" description="v2.5.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added two new deal categories: `AI Tools` and `E-commerce Integrations`, making it easier for you to find specialized software.
+- Introduced SHOP SUMO DAY scheduler in seller dashboard, allowing you to plan promotions automatically.
+
+## Improvements
+
+- Seller tools now load `>40%` faster with optimized caching.
+- Enhanced search filters for buyers, supporting fuzzy matching on product descriptions.
+
+## Bug Fixes
+
+- Fixed intermittent checkout failures during high-traffic events.
+- Resolved dashboard refresh issues on mobile devices.
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // New webhook for deal category updates
+  fetch('https://api.example.com/v1/deals/categories', {
+    method: 'POST',
+    headers: { 'Authorization': `Bearer ${YOUR_API_KEY}` },
+    body: JSON.stringify({ category: 'AI Tools' })
+  });
+  ```
+  ```python
+  # New webhook for deal category updates
+  import requests
+  response = requests.post(
+      'https://api.example.com/v1/deals/categories',
+      headers={'Authorization': f'Bearer {YOUR_API_KEY}'},
+      json={'category': 'AI Tools'}
+  )
+  ```
+</CodeGroup>
+
+</Update>
+
+<Update label="2024-10-20" description="v2.4.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Buyer wishlist sharing via public links, perfect for team collaborations.
+- Seller revenue analytics dashboard with export to CSV.
+
+## Improvements
+
+- Performance enhancements reduce page load times by `<100ms` on average.
+- Updated UI for deal pages with better mobile responsiveness.
+
+## Bug Fixes
+
+- Patched security vulnerability in seller upload endpoints.
+- Fixed notification delivery delays for deal expirations.
+
+</Update>
+
+<Update label="2024-09-10" description="v2.3.0" tags={["breaking", "improvement"]}>
+
+## Breaking Changes
+
+- Deprecated legacy seller API endpoints; migrate to `v1` endpoints by December 2024.
+
+## New Features
+
+- Integrated real-time chat support for buyers during purchases.
+- Automated deal approval workflow for verified sellers.
+
+## Improvements
+
+- Enhanced fraud detection reduces chargebacks by `25%`.
+
+## Bug Fixes
+
+- Corrected pricing display errors on lifetime deals.
+- Stabilized webhook deliveries during peak hours.
+
+</Update>
+
+## How to Stay Updated
+
+Follow these steps to ensure you never miss an update.
+
+<Steps>
+  <Step title="Enable Notifications" icon="bell">
+    Go to your account settings and toggle email notifications for releases.
+  </Step>
+  <Step title="Subscribe to Newsletter" icon="mail">
+    Visit the [subscriptions page](https://dashboard.example.com/subscribe) and enter your email.
+  </Step>
+  <Step title="Follow on Social" icon="share-2">
+    Connect via GitHub or other platforms for instant alerts.
+  </Step>
+</Steps>
+
+<Callout kind="tip" kind="success">
+  Upgrading? Test new features in staging first at `https://staging.appsumo.com`.
+</Callout>
+
+<Expandable title="Migration Guide for v2.3.0" default-open="false">
+
+If you use legacy APIs, update your integrations:
+
+````javascript
+// Old endpoint (deprecated)
+fetch('https://api.example.com/legacy/sellers');
+
+// New endpoint
+fetch('https://api.example.com/v1/sellers');
+````
+
+</Expandable>

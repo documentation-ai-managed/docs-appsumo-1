@@ -1,20 +1,25 @@
 ---
 title: Selling Products on AppSumo
-description: Learn how to list and sell your software products on the AppSumo marketplace to reach over 1 million entrepreneurs seeking great deals.
+description: >-
+  Learn how to list and sell your software products on the AppSumo marketplace
+  to reach over 1 million entrepreneurs seeking great deals.
 ---
-
 ## Overview
+
+/a
 
 AppSumo connects your software products with over 1 million entrepreneurs looking for lifetime deals on productivity, marketing, and content tools. By selling on AppSumo, you gain instant exposure, rapid revenue, and feedback from a passionate community. Focus on lifetime deals to avoid monthly billing hassles while maximizing upfront payments.
 
-<Columns cols={3}>
-  <Card title="Reach 1M+ Buyers" icon="users" href="#applying">
+<Columns cols="3">
+  <Card title="Reach 1M+ Buyers" href="#applying" icon="users" horizontal="false">
     Tap into a ready audience of entrepreneurs.
   </Card>
-  <Card title="Lifetime Deals" icon="dollar-sign" href="#preparing">
+
+  <Card title="Lifetime Deals" href="#preparing" icon="dollar-sign" horizontal="false">
     Offer one-time purchases for quick revenue.
   </Card>
-  <Card title="Easy Payouts" icon="trending-up" href="#tracking">
+
+  <Card title="Easy Payouts" href="#tracking" icon="trending-up" horizontal="false">
     Get paid weekly with minimal fees.
   </Card>
 </Columns>
@@ -24,21 +29,28 @@ AppSumo connects your software products with over 1 million entrepreneurs lookin
 Start by submitting your application through the AppSumo seller portal. AppSumo reviews products for quality, uniqueness, and market fit. Expect a response within 7-10 business days.
 
 <Steps>
-  <Step title="Create Account" icon="user-plus">
+  <Step title="Create Account" icon="user-plus" title-type="p">
     Sign up at `https://appsumo.com/seller` with your business email.
   </Step>
-  <Step title="Submit Application" icon="upload">
+
+  <Step title="Submit Application" icon="upload" title-type="p">
     Provide product details, demo video, and pricing proposal.
   </Step>
-  <Step title="Product Review" icon="check-circle">
+
+  <Step title="Product Review" icon="check-circle" title-type="p">
     AppSumo team evaluates your submission.
   </Step>
-  <Step title="Onboarding" icon="settings">
+
+  <Step title="Onboarding" icon="settings" title-type="p">
     Sign agreements and set up your seller dashboard.
+  </Step>
+
+  <Step title="New Step" title-type="p">
+    /codDescription for this step...
   </Step>
 </Steps>
 
-<Callout kind="tip">
+<Callout kind="tip" collapsed="false">
   Prepare a 2-minute demo video showcasing your product's key features. Highlight time savings for users.
 </Callout>
 
@@ -50,12 +62,13 @@ Craft compelling listings with high-quality screenshots, benefit-focused copy, a
   <Tab title="Deal Structure" icon="layers">
     Use tiered pricing to upsell features.
 
-    | Tier | Price | Features |
-    |------|-------|----------|
-    | Basic | `$29` | Core tools |
-    | Pro   | `$59` | Advanced analytics |
+    | Tier  | Price | Features                      |
+    | ----- | ----- | ----------------------------- |
+    | Basic | `$29` | Core tools                    |
+    | Pro   | `$59` | Advanced analytics            |
     | Elite | `$99` | Priority support + API access |
   </Tab>
+
   <Tab title="Listing Copy" icon="edit-3">
     Focus on benefits: "Save 10 hours/week on task automation."
 
@@ -70,6 +83,7 @@ Craft compelling listings with high-quality screenshots, benefit-focused copy, a
     - Lifetime access
     ```
   </Tab>
+
   <Tab title="Visuals" icon="image">
     Upload 5-7 screenshots and a GIF demo. Use tools like Loom for videos.
   </Tab>
@@ -79,7 +93,7 @@ Craft compelling listings with high-quality screenshots, benefit-focused copy, a
 
 Once live, monitor sales via your dashboard. Handle support through AppSumo's integrated system or your own tools. Respond to inquiries within 24 hours to maintain high ratings.
 
-<CodeGroup tabs="API,Dashboard">
+<CodeGroup show-lines="true" tabs={[]}>
   ```javascript
   // Fetch sales data via AppSumo API
   const response = await fetch('https://api.appsumo.com/sellers/sales', {
@@ -88,6 +102,7 @@ Once live, monitor sales via your dashboard. Handle support through AppSumo's in
   const sales = await response.json();
   console.log(sales.totalRevenue);
   ```
+
   ```bash
   # Dashboard metrics
   curl -H "Authorization: Bearer YOUR_API_KEY" \
@@ -105,11 +120,13 @@ AppSumo pays weekly via PayPal or wire transfer after a 14-day hold. Track earni
   Payouts occur every Monday for sales from the prior week.
 
   - Minimum payout: `$100`
+
   - Fees: 5% platform fee + payment processing
+
   - Refunds: Handled automatically; netted from future payouts
 </Expandable>
 
-<Expandable title="Earnings Report Example">
+<Expandable title="Earnings Report Example" default-open="false">
   ```json
   {
     "totalSales": 1500,
@@ -121,6 +138,7 @@ AppSumo pays weekly via PayPal or wire transfer after a 14-day hold. Track earni
   ```
 </Expandable>
 
-<Callout kind="success">
+<Callout kind="success" collapsed="false">
   Top sellers earn over `$1M` in first-year revenue. Optimize based on buyer feedback.
 </Callout>
+
